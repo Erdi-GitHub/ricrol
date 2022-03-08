@@ -1,0 +1,13 @@
+{
+    "name": "Ric Rol",
+    "description": "Adds a new so-called \"language\" to the Google Translate language options",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "js": ["ricrol.js"],
+            "matches": ["https://www.google.com/*"]
+        }
+    ]
+}
